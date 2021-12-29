@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+
+:root {
+    /* Cores */
+    --red: #DA2535;
+    --pink: #F7C7B9;
+
+    /* Cores Neutras */
+    --white: #F9F9F9;
+    --gray: #8D8D8D;
+    --gray-200:#404040;
+    --black-light: #161212;
+
+    /* Tipografia */
+    --poppins: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--pink);
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--black-light);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    margin-left: 50px;
+}
+
+.logo::before {
+    content: '';
+    background-image: url('../img/Frame.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 140px; 
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: var(--black-light);
+}
+
+.menu__item:hover a {
+    color: var(--red);
+}
+
+.donate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding-top: 119px;
+    padding-bottom: 194px;
+}
+
+.donate__titulo {
+    font-size: 3rem;
+    color: var(--black-light);
+    margin-bottom: 24px;
+}
+
+.donate_paragrafo {
+    color: var(--gray-200);
+    width: 77%;
+    margin-bottom: 40px;
+}
+
+.donate__btn {
+    color: var(--white);
+    background-color: var(--red);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 44%;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.donate__btn:hover {
+    background-color: #8f1520;
+}
+
+.donate__btn::before {
+  content: '';
+  background:url('../img/gift.svg');
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 10px;
+}
+
+.donate__img {
+    width: 90%;
+}
+
+.accessories {
+    background-color: var(--white);
+    padding-bottom: 100px;
+    padding-top: 48px;
+}
+
+.accessories__titulo {
+    font-size: 3rem;
+    color: var(--black-light);
+    text-align: center;
+}
+
+.accessories__paragrafo {
+    color: var(--gray-200);
+    text-align: center;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.list__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+.list__item {
+    text-align: center;
+}
+
+.list__item p {
+    width: 70%;
+    margin: auto;
+}
+
+.celebrate-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.celebrate__title {
+    font-size: 3rem;
+    color: var(--black-light);
+    margin-bottom: 24px;
+    width: 80%;
+}
+
+.celebrate__paragrafo {
+    color: var(--gray-200);
+    margin-bottom: 32px;
+    width: 80%;
+}
+
+.celebrate__btn {
+    color: var(--white);
+    background-color: var(--red);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.celebrate__btn:hover {
+    background-color: #8f1520;
+}
+
+.celebrate__btn::before {
+    content: '';
+    background-image: url('../img/gift.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 10px;
+}
+
+footer {
+    background-color: var(--white);
+}
+
+.box__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black-light);
+}
+
+.box__sociais {
+    display: flex;
+    gap: 40px;
+}
+
+.box__sociais img {
+    background-color: var(--pink);
+    padding: 10px;
+    border-radius: 40%;
+    width: 100%;
+}
